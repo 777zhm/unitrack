@@ -354,12 +354,11 @@ padding-bottom: 14px;
 	margin: auto;
 }
 
-
-
 /* End Posibility block */
 /* Start Statistics block */
 .statistics_block{
 	padding-top: 50px;
+	padding-bottom: 60px;
 }
 
 .statistics_item{	
@@ -389,7 +388,7 @@ padding-bottom: 14px;
 }
 
 .statistics_box img{
-	float: right;
+
 	margin-top: 20px;
 	margin-bottom: 60px;
 }
@@ -428,9 +427,38 @@ padding-bottom: 14px;
 	padding-left: 0;
 	margin-left: 0;
 }
+
+.wages_box div{
+	padding-left: 18px;
+	margin-bottom: 10px;
+	padding-right: 10px;
+}
+
+.wages_box .button_box{
+	text-align: right;
+	padding-right: 20px;
+}
+
+.wages_box button.button_second{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 16px;
+}
+
+.access_box{
+	margin-top: 50px;
+	font-size: 24px;
+}
+
+
 /* End Statistics block */
 /* Start Mobile block */
-
+.mobile_block{
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
 
 /* End Mobile block */
 /* Start Blog block */
