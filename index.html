@@ -136,8 +136,12 @@
       <div class="container satelite_block">
         <div class="row">
           <div class="col-md-12">
-            <h2>Спутниковая система</h2>
-            <img src="img/satelite_bg.png" alt="" class="img img-fluid">
+          <div class="satelite_artbord" style="background-image: url('img/satelite_bottom_bg.png');">
+              <h2>Спутниковая система</h2>
+              <img class="img img-fluid satelite_gps" src="img/gifs/satelite_gps.gif" alt="satelite_gps">
+              <img class="img img-fluid satelite_server" src="img/gifs/satelite_server.gif" alt="satelite_gps">
+              <img class="img img-fluid satelite_mouse" src="img/gifs/satelite_mouse.gif" alt="satelite_gps">
+            </div>
             <div style="text-align: center;">Спутниковая система Unitrack –  современный инструмент контроля, который позволяет отслеживать эффективность работы автопарка. Контролировать передвижения людей, ценных грузов, животных. Обезопасить транспорт или груз в случаи кражи и угона.
             </div>
           </div>
@@ -150,7 +154,7 @@
           <div class="col-12"><h2>ЭТАПЫ РАБОТЫ</h2></div>
           <div class="col-md-4 stage_item">
             <div class="stage_item_box">
-              <img class="img img-fluid" src="img/stage_1.png" alt="stage_1">
+              <img class="img img-fluid" src="img/gifs/stage_1.gif" alt="stage_1">
               <h3>Подбор оборудования</h3>
               <div>Для правильной и эффективной работы системы специалисты компании составляют техническое задание исходя из задач и <span class="show_more_dots">...</span><span class="show_more">потребности клиента. После формирования ТЗ мы подбираем оптимальное оборудование и согласовываем с заказчиком его пожелания.</span>
               </div>
@@ -158,7 +162,7 @@
           </div>
           <div class="col-md-4 stage_item">
             <div class="stage_item_box">
-              <img class="img img-fluid" src="img/stage_2.png" alt="stage_2">
+              <img class="img img-fluid" src="img/gifs/stage_2.gif" alt="stage_2">
               <h3>Настройка и установка</h3>
               <div>После согласования ключевых моментов мы настраиваем оборудование согласно задач клиента, согласовываем сроки <span class="show_more_dots">...</span><span class="show_more">и место проведения монтажных работ. В процессе установки учитывается марка и модель автомобиля. Монтаж проводится скрыто, под торпедой автомобиля в трудно доступном месте за исключением монтажей в которых водитель должен иметь доступ к устройству (наемный транспорт, ценные грузы, контроль людей и животных).</span>
               </div>
@@ -166,7 +170,7 @@
           </div>
           <div class="col-md-4 stage_item">
             <div class="stage_item_box">
-              <img class="img img-fluid" src="img/stage_3.png" alt="stage_3">
+              <img class="img img-fluid" src="img/gifs/stage_3.gif" alt="stage_3">
               <h3>Подключение к системе</h3>
               <div>По осуществлению монтажа наши специалисты проверяют корректность обрабатываемых данных системой <span class="show_more_dots">...</span><span class="show_more">Формируются индивидуальные отчеты под задачи клиента, вносится вся дополнительная информация (контрольные точки, маршруты, данные об объектах).</span>
               </div>
@@ -180,7 +184,7 @@
       <div class="container posibility_block">
         <div class="row justify-content-center">
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/posibility_1.png" alt="posibility_1" class="img img-fluid">
+            <img src="img/gifs/posibility_1.gif" alt="posibility_1" class="img img-fluid">
             <h3>Наблюдение online</h3>
             <div>Контролируйте текущее положение объекта в реальном времени с помощью системы. Удобный доступ.</div>
           </div>
@@ -211,7 +215,34 @@
               <img src="img/demo_version.png" alt="demo_version" class="img img-fluid">
               <div class="button_box">
                 <button class="button_second">Посмотреть Демо</button>
-                <button class="button_first">Заказать презентацию</button>
+                <button class="button_second" type="button" data-toggle="modal" data-target="#presentationModal">Заказать презентацию</button> 
+
+<!-- Start Modal -->
+<div class="modal fade" id="presentationModal" tabindex="-1" role="dialog" aria-labelledby="presentationModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Заказать презентацию</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal_subtitle">Оставьте свои контактные данные и наш менеджер свяжется с Вами.</p>
+        <input type="text" class="form-control" placeholder="Ваше имя *" name="username" required>
+        <input type="tel" class="form-control" placeholder="Телефон *" name="usertelephone" required>
+        <input type="email" class="form-control" placeholder="Email" name="useremail" required>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="button_first modal_button_submit">Заказать</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
+
               </div>
             </div>
           </div>
@@ -347,7 +378,33 @@
           <div class="col-lg-6">
             <h3>Готовы попробовать cпутниковые системы нового поколения?</h3>
             <div>Познакомьтесь с возможностями системы и узнайте чем может быть полезна Вам система Unitrack. Закажите консультацию специалистов компании!</div>
-            <button class="button_second">Заказать консультацию</button>
+            <button class="button_second" type="button" data-toggle="modal" data-target="#consultationModal">Заказать консультацию</button>          
+<!-- Start Modal -->
+<div class="modal fade" id="consultationModal" tabindex="-1" role="dialog" aria-labelledby="consultationModal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Заказать консультацию</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="modal_subtitle">Оставьте свои контактные данные и наш менеджер свяжется с Вами.</p>
+        <input type="text" class="form-control" placeholder="Ваше имя *" name="username" required>
+        <input type="tel" class="form-control" placeholder="Телефон *" name="usertelephone" required>
+        <input type="email" class="form-control" placeholder="Email" name="useremail" required>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button_first modal_button_submit">Заказать</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
+
           </div>
           <div class="col-lg-6">
             <h3>Протестируйте систему Unitrack уже сегодня!</h3>

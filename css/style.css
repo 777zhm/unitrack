@@ -115,6 +115,63 @@ button:hover{
 }
 
 /* End Buttons */
+/* Start Modal window */
+.modal{
+	background-color: rgba(0,0,0,0.15);
+}
+.modal-title{
+	color: #ffffff;
+	margin: auto;	
+}
+.modal-content{
+	background-color: rgba(255,255,255, 0.2);
+	color: #ffffff;
+	border-radius: 3px;
+	border: none;
+}
+.modal-header{
+	border-bottom: none;
+}
+
+.modal-footer{
+	border-top: none;
+}
+
+.modal-body input{
+	margin-bottom: 12px;
+	max-width: 300px;
+	margin: 0 auto 12px auto;
+	font-size: 14px;
+}
+
+.modal-body .modal_subtitle{
+	font-size: 14px;
+}
+
+.modal_button_submit{
+	margin: auto;
+}
+
+button.close{
+	background-color: #ff5d5d;
+    border-radius: 3px;
+    min-width: 40px;
+    color: #ffffff;
+    text-shadow: 0 1px 0 #000;
+}
+
+
+.modal-header .close{
+	margin-left: 0;
+}
+
+
+
+button.close:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+/* End Modal window */
 /* Start Mainmenu */
 .main_menu_row{
 	padding-top: 10px;
@@ -253,10 +310,37 @@ padding-bottom: 14px;
 		margin-top: 35px;
 		margin-bottom: 40px;
 	}
-	.satelite_block img{
-		margin-top: 50px;
-		margin-bottom: 50px;
-	}
+
+.satelite_artbord{
+	min-height: 450px;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	-webkit-background-size: contain;
+	background-size: contain;
+	position: relative;
+}
+
+.satelite_gps{
+	width: 30%;
+	position: absolute;
+	left: 0;
+	bottom: 5vw;
+}
+
+.satelite_server{
+	width: 26%;
+	position: absolute;
+	left: 42vw;
+	bottom: 12vw;
+}
+
+.satelite_mouse{
+	width: 30%;
+	position: absolute;
+	right: 0;
+	bottom: -3vw;
+
+}
 
 /* End Satelite block */
 /* Start Stage block */
@@ -300,10 +384,6 @@ padding-bottom: 14px;
 	box-shadow: 10px 10px 22px 0px rgba(51,51,51,1);
 }
 
-.stage_item_box img{
-	margin-bottom: 40px;
-}
-
 .stage_item_box h3{
 	margin-bottom: 40px;
 }
@@ -333,6 +413,10 @@ padding-bottom: 14px;
 
 .posibility_item img{
 	margin-bottom: 20px;
+}
+
+.posibility_item:nth-child(1) img{
+	margin-bottom: 0px;
 }
 
 .posibility_item h3{
@@ -573,9 +657,50 @@ footer ul{
 
 /* End Copyright block */
 
+
+
 @media only screen and (max-width: 576px)  {
+
+
+.satelite_artbord{
+	height: 350px;
+}
+
+} /*max-width: 576px*/
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { 
 .ms_heading>h1{
   font-size: 10vw;
 }
 
-} /*max-width: 576px*/
+.satelite_artbord{
+	min-height: 200px;
+}
+
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { 
+.satelite_artbord{
+	min-height: 300px;
+}
+
+
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { 
+
+.satelite_artbord{
+	min-height: 350px;
+}
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
