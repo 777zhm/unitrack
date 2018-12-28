@@ -9,7 +9,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Main CSS -->
+    <link rel="stylesheet" href="js/owl/owl.carousel.css">
+    <link rel="stylesheet" href="js/owl/owl.theme.css">
+    <link rel="stylesheet" href="js/owl/owl.transitions.css">
+
     <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+
     <title>Unitrack</title>
   </head>
   <body>
@@ -35,7 +56,7 @@
           <div class="main_menu">
             <ul>
               <li><a href="#">Возможности</a></li>
-              <li><a href="#">Продукция</a></li>
+              <li class="open_submenu"><a href="#">Продукция</a></li>
               <li><a href="#">Тарифы</a></li>
               <li><a href="#">Поддержка</a></li>
               <li><a href="#">Контакты</a></li>
@@ -189,18 +210,47 @@
             <div>Контролируйте текущее положение объекта в реальном времени с помощью системы. Удобный доступ.</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/posibility_2.png" alt="posibility_2" class="img img-fluid">
+            <img src="img/unitrack-icon6.gif" alt="posibility_2" class="img img-fluid">
             <h3>История движения</h3>
             <div>Система мониторинга хранит подробную историю поездок вплоть до 3-х лет. В любой момент вы можете.</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/posibility_3.png" alt="posibility_3" class="img img-fluid">
+            <img src="img/unitrack-icon7.gif" alt="posibility_3" class="img img-fluid">
             <h3>Учет расхода топлива</h3>
             <div>Получайте точную, полную и достоверную информацию о фактическом использовании.</div>
           </div>
         </div>
+		<div class="row justify-content-center more_opportunities">
+          <div class="col-md-4 col-sm-6 posibility_item">
+            <img src="img/gifs/posibility_1.gif" alt="posibility_1" class="img img-fluid">
+            <h3>Наблюдение online</h3>
+            <div>Контролируйте текущее положение объекта в реальном времени с помощью системы. Удобный доступ.</div>
+          </div>
+          <div class="col-md-4 col-sm-6 posibility_item">
+            <img src="img/unitrack-icon6.gif" alt="posibility_2" class="img img-fluid">
+            <h3>История движения</h3>
+            <div>Система мониторинга хранит подробную историю поездок вплоть до 3-х лет. В любой момент вы можете.</div>
+          </div>
+          <div class="col-md-4 col-sm-6 posibility_item">
+            <img src="img/unitrack-icon7.gif" alt="posibility_3" class="img img-fluid">
+            <h3>Учет расхода топлива</h3>
+            <div>Получайте точную, полную и достоверную информацию о фактическом использовании.</div>
+          </div>
+          <div class="col-md-4 col-sm-6 posibility_item">
+            <img src="img/unitrack-icon6.gif" alt="posibility_2" class="img img-fluid">
+            <h3>История движения</h3>
+            <div>Система мониторинга хранит подробную историю поездок вплоть до 3-х лет. В любой момент вы можете.</div>
+          </div>
+          <div class="col-md-4 col-sm-6 posibility_item">
+            <img src="img/unitrack-icon7.gif" alt="posibility_3" class="img img-fluid">
+            <h3>Учет расхода топлива</h3>
+            <div>Получайте точную, полную и достоверную информацию о фактическом использовании.</div>
+          </div>
+        </div>
+
+
         <div class="row justify-content-center">
-          <button class="button_first">Все возможности</button>
+          <button class="button_first load_more_opportunities">Все возможности</button>
         </div>
       </div>
       </div>
@@ -215,7 +265,7 @@
               <img src="img/demo_version.png" alt="demo_version" class="img img-fluid">
               <div class="button_box">
                 <button class="button_second">Посмотреть Демо</button>
-                <button class="button_second" type="button" data-toggle="modal" data-target="#presentationModal">Заказать презентацию</button> 
+                <button class="button_first" type="button" data-toggle="modal" data-target="#presentationModal">Заказать презентацию</button> 
 
 <!-- Start Modal -->
 <div class="modal fade" id="presentationModal" tabindex="-1" role="dialog" aria-labelledby="presentationModal" aria-hidden="true">
@@ -227,15 +277,17 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <p class="modal_subtitle">Оставьте свои контактные данные и наш менеджер свяжется с Вами.</p>
-        <input type="text" class="form-control" placeholder="Ваше имя *" name="username" required>
-        <input type="tel" class="form-control" placeholder="Телефон *" name="usertelephone" required>
-        <input type="email" class="form-control" placeholder="Email" name="useremail" required>
-      </div>
-      <div class="modal-footer">
-          <button type="button" class="button_first modal_button_submit">Заказать</button>
-      </div>
+      <form class="contact_form" id="contact_form">
+	      <div class="modal-body">
+	        <p class="modal_subtitle">Оставьте свои контактные данные и наш менеджер свяжется с Вами.</p>
+	        <input type="text" class="form-control" placeholder="Ваше имя *" name="username" required>
+	        <input type="tel" class="form-control" placeholder="Телефон *" name="usertelephone" required>
+	        <input type="email" class="form-control" placeholder="Email" name="useremail" required>
+	      </div>
+	      <div class="modal-footer">
+	          <button type="submit" class="button_first modal_button_submit">Заказать</button>
+	      </div>
+	  </form>
     </div>
   </div>
 </div>
@@ -350,22 +402,63 @@
     <section>
       <div class="container">
         <div class="row justify-content-center ">
-          <div class="col-lg-10 partners_slider">
-            <div class="partners">
+          <div class="col-lg-10 ">
+            <div class="partners partners_slider">
               <div class="partner_item">
-                <img src="img/partners_1.png" alt="" class="img img-fluid">
+                <img src="img/partners_1.png" alt="" class="img img-fluid hover ">
+                <img src="img/partners_1_hover.jpg" alt="" class="img img-fluid default">
               </div>
               <div class="partner_item">
-                <img src="img/partners_2.png" alt="" class="img img-fluid">
+                <img src="img/partners_2.png" alt="" class="img img-fluid  hover">
+                <img src="img/partners_2_hover.jpg" alt="" class="img img-fluid default">
               </div>
               <div class="partner_item">
-                <img src="img/partners_3.png" alt="" class="img img-fluid">
+                <img src="img/partners_3.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_3_hover.jpg" alt="" class="img img-fluid default">
               </div>
               <div class="partner_item">
-                <img src="img/partners_4.png" alt="" class="img img-fluid">
+                <img src="img/partners_4.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_4_hover.jpg" alt="" class="img img-fluid default">
               </div>
               <div class="partner_item">
-                <img src="img/partners_5.png" alt="" class="img img-fluid">
+                <img src="img/partners_5.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_5_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_6.jpg" alt="" class="img img-fluid hover">
+                <img src="img/partners_6_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_7.jpg" alt="" class="img img-fluid hover">
+                <img src="img/partners_7_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_8.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_8_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_9.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_9_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_10.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_10_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_11.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_11_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_12.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_12_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_13.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_13_hover.jpg" alt="" class="img img-fluid default">
+              </div>
+              <div class="partner_item">
+                <img src="img/partners_14.png" alt="" class="img img-fluid hover">
+                <img src="img/partners_14_hover.jpg" alt="" class="img img-fluid default">
               </div>
             </div>
           </div>
@@ -475,10 +568,32 @@
       </div>
     </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+
+<div id="success_banner">
+	<div class="popup_bg">
+		<div class="popup">
+			<div class="popup_title">
+				<p>Спасибо!</p>
+				<p>Мы свяжемся с вами в ближайшее время</p>
+			</div>
+		</div><!--popup-->
+	</div><!--popup_bg-->
+</div>
+
+
+<div id="load_banner" class="load_banner">
+	<div class="popup_bg">
+		<img src="img/loading.gif" alt="loading" >
+	</div><!--popup_bg-->
+</div>
   </body>
 </html>

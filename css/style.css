@@ -234,15 +234,20 @@ header{
 }
 
 .uni_block{
-position: absolute;
-top: 100%;
-z-index: 1;
-background-image: -webkit-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
-background-image: -o-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
-background-image: linear-gradient(to right, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
+	position: absolute;
+	top: 100%;
+	z-index: 1;
+	background-image: -webkit-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
+	background-image: -o-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
+	background-image: linear-gradient(to right, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
 
-padding-top: 14px;
-padding-bottom: 14px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+
+.uni_block.fixed{
+	position: fixed;
+	top:0;
 }
 
 .ms_icon_box{
@@ -404,6 +409,10 @@ padding-bottom: 14px;
 
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+.more_opportunities{
+	display: none;
 }
 
 .posibility_item{
@@ -610,10 +619,46 @@ padding-bottom: 14px;
 }
 /* End Blog block */
 /* Start Partners block */
+/*
 .partners{
 	display:flex;
 	align-items: center; 
 	justify-content:space-around
+}
+
+*/
+
+
+.partner_item img{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	width:70%;
+
+}
+.partner_item{
+	position: relative;
+	text-align: center;
+	height:160px;
+}
+.partner_item img.default{
+	display: inline-block;
+}
+
+.partner_item img.hover{
+	display: none;
+}
+
+
+.partner_item:hover img.default{
+	display: none;
+}
+
+.partner_item:hover img.hover{
+	display: inline-block;
 }
 
 /* End Partners block */
@@ -657,6 +702,53 @@ footer ul{
 
 /* End Copyright block */
 
+
+
+/*---POPUP---*/
+
+.popup_bg{
+	position:fixed;
+	top:0;
+	right:0;
+	display:none;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.75) fixed center;
+	z-index:9999;
+	outline:0;
+}
+
+.popup{
+	position:fixed;
+	top:15%;
+	right:0;
+	left:0;
+	width:80vw;
+	height:auto;
+	max-height:70vh;
+	max-width:400px;
+	margin:0 auto;
+	background:#fff;
+	padding:10px 20px 20px;
+	text-align:left;
+	overflow:hidden;
+	color:#232323;
+}
+
+.popup_title{
+	padding:10px 0;
+	text-align:center;
+	font-size:24px;
+}
+
+.popup_bg > img{
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	margin:auto;
+}
 
 
 @media only screen and (max-width: 576px)  {
