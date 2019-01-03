@@ -127,8 +127,18 @@ button:hover{
 	width: 100%;
 }
 
+.button_enter_box .enter_text{
+	display: inline-block;
+	line-height: 20px;
+	vertical-align: bottom;
+}
 
-
+.button_enter_box .enter_icon{
+	display: inline-block;
+	line-height: 20px;
+	padding-bottom: 2px;
+	padding-right: 6px;
+}
 
 /* End Buttons */
 /* Start Modal window */
@@ -176,12 +186,9 @@ button.close{
     text-shadow: 0 1px 0 #000;
 }
 
-
 .modal-header .close{
 	margin-left: 0;
 }
-
-
 
 button.close:hover{
 	background-color: rgba(255,255,255,0.5);
@@ -190,8 +197,8 @@ button.close:hover{
 /* End Modal window */
 /* Start Mainmenu */
 .main_menu_row{
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 
@@ -204,7 +211,7 @@ button.close:hover{
 
 .main_menu ul li {
   display: inline-block;
-  margin-right: 16px;
+  margin-right: 28px;
 }
 
 .main_menu ul li a {
@@ -224,9 +231,14 @@ button.close:hover{
 /* End Mainmenu */
 /* Start Header block */
 header{
-	margin-top: 10px;
-	padding-top: 10px;
+	margin-top: 2px;
+	padding-top: 2px;
 	position: relative;
+}
+
+header img.logotype{
+	max-width: 240px;
+	margin-bottom: 3px;
 }
 
 .telephone{
@@ -250,7 +262,7 @@ header .email{
 	background-image: url(../img/email_icon.png);
 	background-repeat: no-repeat;
 	background-position: left center;
-	padding: 0 25px;
+	padding: 0 40px 0 25px;
 	
 }
 
@@ -276,6 +288,11 @@ header .email{
 .ms_icon_box{
 	color: #fff;
 	margin-bottom: 10px;
+}
+
+.ms_icon_box:hover{
+	color: #ff5d5d;
+	cursor: pointer;
 }
 
 .uni_name{
@@ -422,6 +439,20 @@ header .email{
 	box-shadow: 4px 4px 9px 0px rgba(51,51,51,0.3);
 }
 
+.stage_item img.hovered{
+	display: none;
+}
+
+.stage_item:hover img.static{
+	display: none;
+}
+
+.stage_item:hover img.hovered{
+	display: block;
+}
+
+
+
 .stage_item_box h3{
 	margin-bottom: 40px;
 }
@@ -457,9 +488,6 @@ header .email{
 	margin-bottom: 20px;
 }
 
-.posibility_item:nth-child(1) img{
-	margin-bottom: 0px;
-}
 
 .posibility_item h3{
 	margin-bottom: 40px;
@@ -595,10 +623,12 @@ header .email{
 }
 
 .mobile_block .button_howto_box button{
+	width: 241px;
+
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 50px;
-	padding-right: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
 	font-size: 16px;
 
 	margin-left: 5px;
@@ -624,6 +654,12 @@ header .email{
 .blog_block .post_title{
 	color: #ff5d5d;
 	font-size: 18px;
+}
+
+.blog_block .post_title:hover{
+	color: #ff5d5d;
+	font-weight: 600;
+	cursor: pointer;
 }
 
 .post_date{
@@ -715,6 +751,11 @@ footer ul{
 	padding-left: 0;
 }
 
+footer img.logotype{
+	max-width: 240px;
+	margin-bottom: 3px;
+}
+
 /* End Footer block */
 /* Start Copyright block */
 .copyright_text{
@@ -794,12 +835,22 @@ footer ul{
 	min-height: 200px;
 }
 
- }
+.main_menu ul li {
+  margin-right: 14px;
+}
+
+
+
+}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767px) { 
 .satelite_artbord{
 	min-height: 300px;
+}
+
+.main_menu ul li {
+  margin-right: 16px;
 }
 
 }
@@ -809,6 +860,10 @@ footer ul{
 
 .satelite_artbord{
 	min-height: 350px;
+}
+
+.main_menu ul li {
+  margin-right: 18px;
 }
 
  }
@@ -821,11 +876,6 @@ footer ul{
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
-
-
-
-
-
 
 
 
