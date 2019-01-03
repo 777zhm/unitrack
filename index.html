@@ -29,28 +29,34 @@
   </head>
   <body>
     <header>
-      <div class="container-fluid">
-        <div class="row">
+      <div class="container">
+        <div class="row  d-flex align-items-center">
           <div class="col-md-3 logotype">
-            <img src="img/logotype.jpg" alt="logotype" class="img img-fluid ml-lg-5 ml-sm-3">
+            <img src="img/logotype.jpg" alt="logotype" class="img img-fluid">
           </div>
-          <div class="col-md-3 social_block text-left">
-            <img src="img/fb_icon.png" alt="fb_icon">
-            <img src="img/insta_icon.png" alt="insta_icon">
-            <img src="img/youtube_icon.png" alt="youtube_icon">
+          <div class="col-md-4 social_block text-left">
+          	<a href="https://fb.com">
+	            <img src="img/fb_icon.png" alt="fb_icon">
+	        </a>
+          	<a href="https://instagram.com">
+            	<img src="img/insta_icon.png" alt="insta_icon">
+        	</a>
+          	<a href="https://youtube.com">
+            	<img src="img/youtube_icon.png" alt="youtube_icon">
+            </a>
           </div>
-          <div class="col-md-3">
-            <div class="telephone ">0 800 210 988</div>
+          <div class="col-md-2_5">
+            <div class="telephone">0 800 210 988</div>
             <div class="telephone_hint">Бесплатно по Украине со стационарных и мобильных</div>
           </div>
-          <div class="col-md-3">
-            <div><button class="button_second"><img src="img/user_icon.png" alt="user_icon">Вход</button></div>
-            <div><button class="button_first">Демо</button></div>
+          <div class="col-md-1_5 header_button_box">
+            <div class="button_enter_box"><button class="button_second" onclick="location.href='http://gps.unitrack.com.ua'"><img src="img/user_icon.png" alt="user_icon">Вход</button></div>
+            <div class="button_demo_box"><button class="button_first" data-toggle="modal" data-target="#presentationModal">Демо</button></div>
           </div>
         </div>
         <div class="row main_menu_row">
-          <div class="col-md-9 main_menu">
-            <ul class="ml-lg-5 ml-sm-3">
+          <div class="col-md-7 main_menu">
+            <ul>
               <li><a href="#">Возможности</a></li>
               <li class="open_submenu"><a href="#">Продукция</a></li>
               <li><a href="#">Тарифы</a></li>
@@ -58,74 +64,79 @@
               <li><a href="#">Контакты</a></li>
             </ul>
           </div>
-          <div class="col-md-3 email">
-            info@unitrack.com.ua
+          <div class="col-md-2_5 ">
+          	<div class="email">
+	            info@unitrack.com.ua
+	        </div>
           </div>
+          <div class="col-md-1_5"></div>
         </div>
       </div>
-      <div class="container-fluid uni_block">
-        <div class="row">
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Легковой транспорт</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_1.png" alt="ms_icon_1"><span>uni-auto</span>
+      <div class="uni_block">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Легковой транспорт</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_1.png" alt="ms_icon_1"><span>uni-auto</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Сельхозтеника</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_2.png" alt="ms_icon_2"><span>uni-Farm</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Сельхозтеника</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_2.png" alt="ms_icon_2"><span>uni-Farm</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Ценный груз</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_3.png" alt="ms_icon_3"><span>uni-spy</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Ценный груз</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_3.png" alt="ms_icon_3"><span>uni-spy</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Персона</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_4.png" alt="ms_icon_4"><span>Uni-personal</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Персона</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_4.png" alt="ms_icon_4"><span>Uni-personal</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Грузовой транспорт</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_5.png" alt="ms_icon_5"><span>Uni-track</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Грузовой транспорт</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_5.png" alt="ms_icon_5"><span>Uni-track</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Защита при угонах</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_6.png" alt="ms_icon_6"><span>Uni-Guard</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Защита при угонах</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_6.png" alt="ms_icon_6"><span>Uni-Guard</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Наемный транспорт</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_7.png" alt="ms_icon_7"><span>uni-rent</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Наемный транспорт</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_7.png" alt="ms_icon_7"><span>uni-rent</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
-            <div class="icon_text_wrapper text-left">Животные</div>
-            <div class="uni_name">
-              <div class="icon_text_wrapper">
-                <img src="img/ms_icon_8.png" alt="ms_icon_8"><span>Uni-pet</span>
+            <div class="col-lg-3 col-md-4 col-6 ms_icon_box">
+              <div class="icon_text_wrapper text-left">Животные</div>
+              <div class="uni_name">
+                <div class="icon_text_wrapper">
+                  <img src="img/ms_icon_8.png" alt="ms_icon_8"><span>Uni-pet</span>
+                </div>
               </div>
             </div>
           </div>
@@ -218,29 +229,29 @@
         </div>
 		<div class="row justify-content-center more_opportunities">
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/gifs/posibility_1.gif" alt="posibility_1" class="img img-fluid">
-            <h3>Наблюдение online</h3>
-            <div>Контролируйте текущее положение объекта в реальном времени с помощью системы. Удобный доступ.</div>
+            <img src="img/posibility_4.png" alt="posibility_1" class="img img-fluid">
+            <h3>Уведомления о событиях</h3>
+            <div>Система Unitrack позволяет контролировать широкий спектр событий на основании местонахождения наблюдаемых объектов</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/unitrack-icon6.gif" alt="posibility_2" class="img img-fluid">
-            <h3>История движения</h3>
-            <div>Система мониторинга хранит подробную историю поездок вплоть до 3-х лет. В любой момент вы можете.</div>
+            <img src="img/posibility_5.png" alt="posibility_2" class="img img-fluid">
+            <h3>Пробег и моточасы</h3>
+            <div>Пробег и моточасы часто служат базовыми параметрами для оценки того, насколько активно используется транспорт</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/unitrack-icon7.gif" alt="posibility_3" class="img img-fluid">
-            <h3>Учет расхода топлива</h3>
-            <div>Получайте точную, полную и достоверную информацию о фактическом использовании.</div>
+            <img src="img/posibility_6.png" alt="posibility_3" class="img img-fluid">
+            <h3>«Локатор» или «Курьер на карте»</h3>
+            <div>Получайте точную, полную и достоверную информацию о фактическом использовании топлива и реальном объеме заправок</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/unitrack-icon6.gif" alt="posibility_2" class="img img-fluid">
-            <h3>История движения</h3>
-            <div>Система мониторинга хранит подробную историю поездок вплоть до 3-х лет. В любой момент вы можете.</div>
+            <img src="img/posibility_7.png" alt="posibility_2" class="img img-fluid">
+            <h3>Наблюдение с мобильных устройств</h3>
+            <div>Находясь в дороге или на производственной площадке, вы можете продолжать наблюдение за вашими объектами</div>
           </div>
           <div class="col-md-4 col-sm-6 posibility_item">
-            <img src="img/unitrack-icon7.gif" alt="posibility_3" class="img img-fluid">
-            <h3>Учет расхода топлива</h3>
-            <div>Получайте точную, полную и достоверную информацию о фактическом использовании.</div>
+            <img src="img/posibility_8.png" alt="posibility_3" class="img img-fluid">
+            <h3>Защита и безопасность</h3>
+            <div>Система ГдеМои обеспечивает безопасность автомобиля, водителя и груза через комплексное информирование об угрозах</div>
           </div>
         </div>
 

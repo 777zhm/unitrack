@@ -67,6 +67,14 @@ a:hover{
 	color: inherit;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+
+
 /* End Base styles */
 /* Start Buttons */
 button{
@@ -74,7 +82,7 @@ button{
 	border: 1px solid #ff5d5d;
 	background-color: #ff5d5d;
 	border-radius: 30px;
-	min-width: 120px;
+	min-width: 100px;
 	font-size: 18px;
 
 	padding-left: 8px;
@@ -113,6 +121,14 @@ button:hover{
 	color: #ffffff;
 	background-color: #ff5d5d;
 }
+
+.button_enter_box,
+.button_demo_box{
+	width: 100%;
+}
+
+
+
 
 /* End Buttons */
 /* Start Modal window */
@@ -225,17 +241,24 @@ header{
 .telephone_hint{
 	color: #8f8f8f;
 	font-size: 10px;
-	padding-left: 25px;
-	background-image: url(../img/email_icon.png);
-	background-repeat: no-repeat;
-	background-position: left center;
+	padding: 0 25px;
 	line-height: 1;
 	margin-top: 6px;
 }
 
+header .email{
+	background-image: url(../img/email_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding: 0 25px;
+	
+}
+
 .uni_block{
+	display:none;
 	position: absolute;
 	top: 100%;
+	width: 100%;
 	z-index: 1;
 	background-image: -webkit-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
 	background-image: -o-linear-gradient(left, rgba(70, 96, 124, 0.62) 0%, rgba(49, 70, 92, 0.62) 50%, rgba(32, 46, 63, 0.62) 100%);
@@ -260,14 +283,20 @@ header{
 }
 
 .icon_text_wrapper{
-	width: 200px;
 	margin: 0 auto;
-
 	text-align: left;
 }
 
 .icon_text_wrapper span{
 	padding-left: 10px;
+}
+
+.header_button_box{
+	text-align: right;
+}
+
+header .email{
+	text-align: right;
 }
 
 /* End Header block */
@@ -769,8 +798,7 @@ footer ul{
 	min-height: 300px;
 }
 
-
- }
+}
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991px) { 
@@ -782,7 +810,58 @@ footer ul{
  }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199px) { ... }
+@media (min-width: 1200px) { 
+	
+
+}
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
+
+
+
+
+
+
+
+
+
+
+.col-md-2_5{
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+
+}
+
+
+@media (min-width: 768px){
+
+
+.col-md-2_5{
+
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 20.8333333%;
+	flex: 0 0 20.8333333%;
+	max-width: 20.8333333%;
+}
+
+.col-md-1_5{
+
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 12.5%;
+	flex: 0 0 12.5%;
+	max-width: 12.5%;
+}
+
+
+
+
+
+
+
+
+
+}
