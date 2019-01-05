@@ -140,6 +140,20 @@ button:hover{
 	padding-right: 6px;
 }
 
+
+.button_enter_box .user_icon_hover{
+	display: none;
+}
+
+.button_enter_box:hover .user_icon{
+	display: none;
+}
+
+
+.button_enter_box:hover .user_icon_hover{
+	display: inline-block;
+}
+
 /* End Buttons */
 /* Start Modal window */
 .modal{
@@ -657,8 +671,7 @@ header .email{
 }
 
 .blog_block .post_title:hover{
-	color: #ff5d5d;
-	font-weight: 600;
+	color: #d02f2f;
 	cursor: pointer;
 }
 
