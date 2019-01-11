@@ -1,15 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@font-face{
+font-family: 'Arial';
+src: url('https://unitrack.com.ua/new/fonts/arialregular.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face{
+font-family: 'Arial Thin';
+src: url('https://unitrack.com.ua/new/fonts/arialthin.ttf');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
 
 /* Start Base styles */
 html{
-	font-size: 16px;
+	font-size: 14px;
 }
 
 body{
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
+	font-family: 'Arial Thin', sans-serif;
+	font-size: 14px;
 	color: #000000;
 	background-color: #ffffff;
+}
+
+h1,h2{
+	text-transform: uppercase;
+	font-family: 'Arial', sans-serif;
+	color: #000000;
+}
+
+h1{
+	color: #ffffff;
+}
+
+h3,h4,h5,h6{
+	font-family: 'Arial', sans-serif;
+	color: #000000;
+}
+
+h1{
+	font-size: 3.5715rem; /* 50px/14 */
+}
+
+h2{
+	font-size: 2.42857rem; /* 34px/14 */
+}
+
+h3{
+	font-size: 1.715rem; /* 24px/14 */
+}
+
+h4{
+	font-size: 1.2857rem; /* 18px/14 */
+}
+
+p{
+	font-size: 14px;
+	font-family: 'Arial Thin', sans-serif;
+}
+
+a{
+	color: #000000;
+}
+a:hover{
+	text-decoration: none;
+	color: inherit;
 }
 
 .mobile_section, .posibility_section{
@@ -24,57 +84,11 @@ body{
 	background-color: #606060;	
 }
 
-h1,h2{
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	color: #000000;
-}
-
-h1{
-	color: #ffffff;
-}
-
-h3,h4,h5,h6{
-	font-family: 'Montserrat', sans-serif;
-	color: #000000;
-}
-
-h1{
-	font-size: 3.125rem; /* 50px/16 */
-}
-
-h2{
-	font-size: 2.25rem; /* 36px/16 */
-}
-
-h3{
-	font-size: 1.5rem; /* 24px/16 */
-}
-
-h4{
-	font-size: 1.125rem; /* 18px/16 */
-}
-
-p{
-	font-size: 16px;
-}
-
-a{
-	color: #000000;
-}
-a:hover{
-	text-decoration: none;
-	color: inherit;
-}
-
 .vcenter {
     display: inline-block;
     vertical-align: middle;
     float: none;
 }
-
-
-
 /* End Base styles */
 /* Start Buttons */
 button{
@@ -92,8 +106,9 @@ button{
 }
 
 button:hover{
-	color: #000000;
-	background-color: #ffffff;
+	-webkit-box-shadow: 2px 2px 4px 0px rgba(51,51,51,0.3);
+	-moz-box-shadow: 2px 2px 4px 0px rgba(51,51,51,0.3);
+	box-shadow: 2px 2px 4px 0px rgba(51,51,51,0.3);
 }
 
 
@@ -105,8 +120,7 @@ button:hover{
 }
 
 .button_first:hover{
-	color: #000000;
-	background-color: #ffffff;
+	
 }
 
 .button_second{
@@ -118,8 +132,7 @@ button:hover{
 }
 
 .button_second:hover{
-	color: #ffffff;
-	background-color: #ff5d5d;
+	
 }
 
 .button_enter_box,
@@ -127,32 +140,41 @@ button:hover{
 	width: 100%;
 }
 
-.button_enter_box .enter_text{
-	display: inline-block;
-	line-height: 20px;
-	vertical-align: bottom;
+.button_enter_box button,
+.button_demo_box button{
+	font-size: 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
-.button_enter_box .enter_icon{
-	display: inline-block;
-	line-height: 20px;
-	padding-bottom: 2px;
-	padding-right: 6px;
+.button_enter_box button{
+	color: #ff5d5d;
 }
 
-
-.button_enter_box .user_icon_hover{
-	display: none;
-}
-
-.button_enter_box:hover .user_icon{
-	display: none;
+.button_demo_box button{
+	padding-left: 24px;
+	padding-right: 23px;
+	border: 1px solid #999999;
 }
 
 
-.button_enter_box:hover .user_icon_hover{
-	display: inline-block;
+.backtotop_button{
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  background-image: url("../img/backtotop_icon.png");
+  z-index: 99;
 }
+
+.backtotop_button:hover {
+  opacity: 0.9;
+}
+
 
 /* End Buttons */
 /* Start Modal window */
@@ -248,6 +270,7 @@ header{
 	margin-top: 2px;
 	padding-top: 2px;
 	position: relative;
+	font-family: 'Arial', sans-serif;
 }
 
 header img.logotype{
@@ -409,7 +432,11 @@ header .email{
 
 .satelite_text{
 	margin-top: 25px;
-	font-weight: 600;
+	font-weight: 400;
+	
+	font-family: 'Arial Thin', sans-serif;
+	font-size: 20px;
+	line-height: 22px;
 }
 /* End Satelite block */
 /* Start Stage block */
@@ -502,6 +529,18 @@ header .email{
 	margin-bottom: 20px;
 }
 
+.posibility_item img.hovered{
+	display: none;
+}
+
+.posibility_item:hover img.static{
+	display: none;
+}
+
+.posibility_item:hover img.hovered{
+	display: block;
+}
+
 
 .posibility_item h3{
 	margin-bottom: 40px;
@@ -537,8 +576,6 @@ header .email{
   padding-top: 40px;
   padding-bottom: 18px;
   padding-left: 18px;
-
-  margin-bottom: 18px;
 }
 
 .statistics_item h2{
@@ -548,6 +585,12 @@ header .email{
 .statistics_item div{
 	padding-left: 18px;
 }
+
+.equal{
+  display: flex;
+  display: -webkit-flex;
+}
+
 
 .demo_box img{
 	float: right;
@@ -596,6 +639,10 @@ header .email{
 	margin-left: 0;
 }
 
+.wages_box {
+	margin-top: 20px;
+}
+
 .wages_box div{
 	padding-left: 18px;
 	margin-bottom: 10px;
@@ -639,10 +686,10 @@ header .email{
 .mobile_block .button_howto_box button{
 	width: 241px;
 
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 8px;
+	padding-right: 8px;
 	font-size: 16px;
 
 	margin-left: 5px;
@@ -699,6 +746,25 @@ header .email{
 	font-size: 16px;
 	margin-top: 20px;
 }
+
+.post_image{
+	width: 100%;
+	height: 280px;
+	/*background-position: 0 0;*/
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.post_item:hover .show_more_dots{
+	display: none;
+}
+
+.post_item:hover .show_more{
+	display: inline;
+}
+
+
 /* End Blog block */
 /* Start Partners block */
 .partner_item img{
@@ -708,8 +774,8 @@ header .email{
 	left:0;
 	right:0;
 	margin:auto;
-	width:70%;
-
+	max-height: 75px;
+	max-width: 150px;
 }
 
 .partner_item{
@@ -737,7 +803,7 @@ header .email{
 /* Start Calltoaction block */
 .calltoaction_block{
 	margin-top: 70px;
-	margin-bottom: 200px;
+	margin-bottom: 70px;
 }
 
 
@@ -757,11 +823,26 @@ header .email{
 /* End Calltoaction block */
 /* Start Footer block */
 footer{
-	margin-bottom: 26px;
+	padding-top: 28px;
+	background-color: #999999;
+	padding-bottom: 14px;
+	font-family: 'Arial Thin', sans-serif;
+	font-size: 12px;
 }
+
+footer h3{
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+
 footer ul{
 	list-style: none;
 	padding-left: 0;
+}
+
+footer li{
+	font-family: 'Arial Thin', sans-serif;
+	font-size: 12px;
 }
 
 footer img.logotype{
@@ -864,6 +945,18 @@ footer img.logotype{
 
 .main_menu ul li {
   margin-right: 16px;
+}
+
+.backtotop_button{
+  position: fixed;
+  bottom: 11px;
+  right: 11px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 33px;
+  height: 33px;
+  background-size: contain;
+  background-image: url("../img/backtotop_icon.png");
 }
 
 }
