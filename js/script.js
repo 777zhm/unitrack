@@ -13,18 +13,6 @@
 		});
 
 
-		window.onscroll = function() { //вызываем при скролле
-			var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-			var block_top = $('header').height();
-
-			if(scrolled < block_top){
-				$('.uni_block').removeClass('fixed');
-			} else{
-				$('.uni_block').addClass('fixed');
-
-			}
-
-		}
 
 		$('.partners_slider').owlCarousel({
 			navigation : false,
@@ -93,9 +81,9 @@
 		console.log(xpos);
 		$('.satelite_artbord .satelite_mouse').css('bottom', 'calc( -3vw ' + ' + ' + (y_bottom_pos/25) + 'px )' );
 
-		$('.satelite_artbord .satelite_server').css('bottom', 'calc( 12vw ' + ' + ' + (y_bottom_pos/35) + 'px )').css('left', 'calc( 42vw ' + ' + ' + (xpos/40) + 'px )' );
+		$('.satelite_artbord .satelite_server').css('bottom', 'calc( 12vw ' + ' + ' + (y_bottom_pos/35) + 'px )').css('right', 'calc( 42vw ' + ' + ' + (xpos/40) + 'px )' );
 
-		$('.satelite_artbord .satelite_gps').css('bottom', 'calc( 5vw ' + ' + ' + (y_bottom_pos/45) + 'px )').css('left',  (xpos/45) + 'px' );
+		$('.satelite_artbord .satelite_gps').css('bottom', 'calc( 5vw ' + ' + ' + (y_bottom_pos/45) + 'px )').css('right',  (xpos/45) + 'px' );
 		
 
 

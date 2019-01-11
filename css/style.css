@@ -1,20 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800');
 
-@font-face{
-font-family: 'Arial';
-src: url('https://unitrack.com.ua/new/fonts/arialregular.ttf');
-font-weight: normal;
-font-style: normal;
-}
-
-@font-face{
-font-family: 'Arial Thin';
-src: url('https://unitrack.com.ua/new/fonts/arialthin.ttf');
-font-weight: normal;
-font-style: normal;
-}
-
-
-
+@font-face {
+			font-family: "ArialRegular";
+			src: url("../fonts/ArialRegular/ArialRegular.eot");
+			src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/ArialRegular/ArialRegular.woff") format("woff"),
+			url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
 
 /* Start Base styles */
 html{
@@ -22,33 +16,21 @@ html{
 }
 
 body{
-	font-family: 'Arial Thin', sans-serif;
+	font-family: "ArialRegular", sans-serif;
 	font-size: 14px;
 	color: #000000;
 	background-color: #ffffff;
 }
 
-h1,h2{
-	text-transform: uppercase;
-	font-family: 'Arial', sans-serif;
-	color: #000000;
-}
-
-h1{
-	color: #ffffff;
-}
-
-h3,h4,h5,h6{
-	font-family: 'Arial', sans-serif;
-	color: #000000;
-}
-
 h1{
 	font-size: 3.5715rem; /* 50px/14 */
+	color: #ffffff;
+	text-transform: uppercase;
 }
 
 h2{
 	font-size: 2.42857rem; /* 34px/14 */
+	text-transform: uppercase;
 }
 
 h3{
@@ -61,7 +43,6 @@ h4{
 
 p{
 	font-size: 14px;
-	font-family: 'Arial Thin', sans-serif;
 }
 
 a{
@@ -233,7 +214,7 @@ button.close:hover{
 /* End Modal window */
 /* Start Mainmenu */
 .main_menu_row{
-	padding-top: 2px;
+	padding-top: 11px;
 	padding-bottom: 2px;
 }
 
@@ -270,7 +251,6 @@ header{
 	margin-top: 2px;
 	padding-top: 2px;
 	position: relative;
-	font-family: 'Arial', sans-serif;
 }
 
 header img.logotype{
@@ -347,11 +327,10 @@ header .email{
 
 .header_button_box{
 	text-align: right;
+	position: relative;
+	top: 20px;
 }
 
-header .email{
-	text-align: right;
-}
 
 /* End Header block */
 /* Start Mainscreen block */
@@ -431,12 +410,10 @@ header .email{
 }
 
 .satelite_text{
-	margin-top: 25px;
+	margin-top: 20px;
 	font-weight: 400;
-	
-	font-family: 'Arial Thin', sans-serif;
 	font-size: 20px;
-	line-height: 22px;
+	line-height: 30px;
 }
 /* End Satelite block */
 /* Start Stage block */
@@ -459,6 +436,71 @@ header .email{
 	-moz-transition: all 0.8s ease-out;
 	-o-transition: all 0.8s ease-out;
 	transition: all 0.8s ease-out;
+}
+
+.stage_item_box h3{
+	margin-bottom: 40px;
+}
+
+.stage_item_block{
+	position: relative;
+	z-index: 3;
+}
+
+.stage_item_block_1::after{
+	content: "1";
+	position: absolute; 
+	top: -30px;
+	left: 80px;
+	
+	z-index: -1;
+	font-size: 180px;
+	line-height: 180px;
+	color: rgba(243, 175, 175, 1);
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+.stage_item_block_2::after{
+	content: "2";
+	position: absolute; 
+	top: -30px;
+	left: 80px;
+	
+	z-index: -1;
+	font-size: 180px;
+	line-height: 180px;
+	color: rgba(243, 175, 175, 1);
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+.stage_item_block_3::after{
+	content: "3";
+	position: absolute; 
+	top: -30px;
+	left: 80px;
+	
+	z-index: -1;
+	font-size: 180px;
+	line-height: 180px;
+	color: rgba(243, 175, 175, 1);
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.stage_item:hover .stage_item_block_1::after{
+	content: "1";
+	position: absolute; 
+	left: 100px;
+}
+.stage_item:hover .stage_item_block_2::after{
+	content: "2";
+	position: absolute; 
+	left: 100px;
+}
+.stage_item:hover .stage_item_block_3::after{
+	content: "3";
+	position: absolute; 
+	left: 100px;
 }
 
 .show_more{
@@ -490,12 +532,6 @@ header .email{
 
 .stage_item:hover img.hovered{
 	display: block;
-}
-
-
-
-.stage_item_box h3{
-	margin-bottom: 40px;
 }
 
 /* End Stage block */
@@ -553,19 +589,29 @@ header .email{
 	background-color: #ff5d5d;
 	width: 57px;
   	height: 4px;
+  	border-radius: 5px;
   	position: absolute;
 	top: 0;
   	bottom: -150%;
   	left: 0;
 	right: 0;
 	margin: auto;
+
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
+	transition: all 0.4s ease-out;
+}
+
+.posibility_item:hover h3:after{
+	width: 100%;
 }
 
 /* End Posibility block */
 /* Start Statistics block */
 .statistics_block{
 	padding-top: 50px;
-	padding-bottom: 70px;
+	padding-bottom: 50px;
 }
 
 .statistics_item{	
@@ -663,8 +709,9 @@ header .email{
 }
 
 .access_box{
-	margin-top: 50px;
-	font-size: 24px;
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 30px;
 }
 
 
@@ -672,7 +719,20 @@ header .email{
 /* Start Mobile block */
 .mobile_block{
 	padding-top: 70px;
-	padding-bottom: 80px;
+	padding-bottom: 70px;
+}
+.mobile_img_box{
+	position: relative;
+}
+
+.mobile_img_heading{
+	text-transform: none;
+	color: red;
+	font-size: 36px;
+	position: absolute;
+	top: 50px;
+	right: 18%;
+	font-weight: 600;
 }
 
 .mobile_block .button_howto_box{
@@ -698,8 +758,9 @@ header .email{
 }
 
 .mobile_block_text{
-	font-size: 24px;
-	margin-top: 40px;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 30px;
 }
 /* End Mobile block */
 /* Start Blog block */
@@ -764,7 +825,6 @@ header .email{
 	display: inline;
 }
 
-
 /* End Blog block */
 /* Start Partners block */
 .partner_item img{
@@ -806,7 +866,6 @@ header .email{
 	margin-bottom: 70px;
 }
 
-
 .calltoaction_block h3{
 	text-transform: uppercase;
 }
@@ -826,12 +885,10 @@ footer{
 	padding-top: 28px;
 	background-color: #999999;
 	padding-bottom: 14px;
-	font-family: 'Arial Thin', sans-serif;
 	font-size: 12px;
 }
 
 footer h3{
-	font-family: 'Arial', sans-serif;
 	font-size: 14px;
 }
 
@@ -841,7 +898,6 @@ footer ul{
 }
 
 footer li{
-	font-family: 'Arial Thin', sans-serif;
 	font-size: 12px;
 }
 
@@ -857,13 +913,8 @@ footer img.logotype{
 	margin-bottom: 17px;
 	color: #c6c6c6;
 }
-
 /* End Copyright block */
-
-
-
-/*---POPUP---*/
-
+/* Start Popup */
 .popup_bg{
 	position:fixed;
 	top:0;
@@ -907,38 +958,46 @@ footer img.logotype{
 	left:0;
 	margin:auto;
 }
+/* End Popup */
 
+/******* Start Media Query *******/
+/* Start max-width: 992px and min-width: 1199px */
+@media (min-width: 992px) and (max-width: 1199px)  {
 
-@media only screen and (max-width: 576px)  {
-
-
-.satelite_artbord{
-	height: 350px;
-}
-
-} /*max-width: 576px*/
-
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575px) { 
-.ms_heading>h1{
-  font-size: 10vw;
-}
+}/* End max-width: 992px and min-width: 1199px */
+/* Start max-width: 991px*/
+@media (max-width: 991px)  {
 
 .satelite_artbord{
-	min-height: 200px;
+	min-height: 350px;
 }
 
 .main_menu ul li {
-  margin-right: 14px;
+  margin-right: 18px;
 }
 
-
+.col-md-2_5{ /* TODO Repair this */
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
 
 }
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767px) { 
+.mobile_img_heading{
+	color: red;
+	font-size: 36px;
+	top: -50px;
+	right: 6%;
+	margin: auto;
+	width: 360px; 
+}
+
+} /* End max-width: 991px*/
+/* Start max-width: 767px */
+@media (max-width: 767px)  {
+
 .satelite_artbord{
 	min-height: 300px;
 }
@@ -959,48 +1018,29 @@ footer img.logotype{
   background-image: url("../img/backtotop_icon.png");
 }
 
-}
 
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991px) { 
+
+} /* End max-width: 767px*/
+/* Start max-width: 575px */
+@media (max-width: 575px)  {
 
 .satelite_artbord{
-	min-height: 350px;
+	height: 350px;
+}
+
+.ms_heading>h1{
+  font-size: 10vw;
+}
+
+.satelite_artbord{
+	min-height: 200px;
 }
 
 .main_menu ul li {
-  margin-right: 18px;
+  margin-right: 14px;
 }
 
- }
-
-// Large devices (desktops, less than 1200px)
-@media (min-width: 1200px) { 
-	
-
-}
-
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
-
-
-
-
-
-.col-md-2_5{
-	position: relative;
-	width: 100%;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-
-}
-
-
-@media (min-width: 768px){
-
-
-.col-md-2_5{
+.col-md-2_5{/* TODO Repair this */
 
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 20.8333333%;
@@ -1008,7 +1048,7 @@ footer img.logotype{
 	max-width: 20.8333333%;
 }
 
-.col-md-1_5{
+.col-md-1_5{/* TODO Repair this */
 
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 12.5%;
@@ -1016,12 +1056,5 @@ footer img.logotype{
 	max-width: 12.5%;
 }
 
-
-
-
-
-
-
-
-
-}
+} /* End max-width: 575px */
+/******* End Media Query *******/
