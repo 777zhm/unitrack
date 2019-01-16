@@ -340,7 +340,7 @@ header .email{
 /* Start Mainscreen block */
 .mainscreen_block{
 	/*background-image: url("../img/ms_bg.jpg");*/
-	background-size:auto
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-position:left center;
 	position: relative;
@@ -401,8 +401,8 @@ header .email{
 .satelite_server{
 	width: 26%;
 	position: absolute;
-	left: 42vw;
-	bottom: 12vw;
+	right: 20vw;
+	top: 0;
 }
 
 .satelite_mouse{
@@ -449,6 +449,7 @@ header .email{
 .stage_item_block{
 	position: relative;
 	z-index: 3;
+	margin-top:-40px;
 }
 
 .stage_item_block_1::after{
@@ -566,7 +567,7 @@ header .email{
 
 
 .posibility_item img{
-	margin-bottom: 20px;
+	margin-bottom: -20px;
 }
 
 .posibility_item img.hovered{
@@ -687,6 +688,19 @@ header .email{
 	text-align: center;
 	padding-left: 0;
 	margin-left: 0;
+}
+
+.statistics_button_box{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+.statistics_button_box .button_second{
+	margin-bottom: 0;
 }
 
 .wages_box {
@@ -1061,4 +1075,4 @@ footer img.logotype{
 }
 
 } /* End max-width: 575px */
-/**`–\    `–\                  
+/******* End Media Query *******/
